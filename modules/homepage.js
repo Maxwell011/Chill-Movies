@@ -7,8 +7,8 @@ movieApi();
 
 const movieList = async () => {
   const allMovies = await movieApi();
-  allMovies.forEach((movie) => {
-    const moviesContainer = document.querySelector('.movies-container');
+  allMovies.forEach((movie =>  {
+   const moviesContainer = document.querySelector('.movies-container');
     const movieUL = document.createElement('ul');
     const movieLI = document.createElement('li');
     movieLI.className = 'movie-cards';
@@ -26,7 +26,7 @@ const movieList = async () => {
 
     movieUL.appendChild(movieLI);
     moviesContainer.appendChild(movieUL);
-  });
-};
+   }),
+)};
 
 export { movieApi, movieList };

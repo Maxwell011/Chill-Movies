@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +14,132 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: brown;
   padding: 0 20px;
+}
+
+body {
+  /* background-color: #000; */
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+h1 {
+  color: #fff;
+}
+
+span {
+  color: #000;
+}
+
+li {
+  list-style: none;
 }
 
 .lists {
   display: flex;
-  padding: ;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding-right: 20px;
+  gap: 30px;
+  color: #000;
+}
+
+/* stylings for the display items */
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0;
+  padding-right: 20px;
+  margin: auto;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  width: 370px;
+  height: 500px;
+}
+
+.movie-cards {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-cards:hover {
+  box-shadow: 0 0 4px #747474ab;
+}
+
+.movie-title {
+  text-align: center;
+  color: #464646;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: beige;
+  border: 1px solid brown;
+  font-size: 1.2rem;
+  cursor: pointer;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: wheat;
+}
+
+button:active {
+  background-color: brown;
+  color: #fff;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  .mobile {
+    /* color: wheat; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .movies-container {
+    display: block;
+    margin: auto;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
 }
