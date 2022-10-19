@@ -1,7 +1,7 @@
 const movieApi = async () => {
   const fetchResult = await fetch('https://api.tvmaze.com/shows');
   const ShowResult = await fetchResult.json();
-  return ShowResult;
+  return ShowResult.slice(0, 40);
 };
 movieApi();
 
