@@ -1,0 +1,115 @@
+.comment_popup_main_section {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.comment_popup_main_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 28, 28, 0.7);
+}
+
+.comment_card {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 900px;
+  background: #fff;
+}
+
+.close_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 70px;
+  width: 100%;
+  height: auto;
+}
+
+.card_close_btn {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.movie_poster_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  background: red;
+}
+
+.movie_poster {
+  height: 100%;
+  width: 60%;
+  background: green;
+}
+
+.movie_title_div {
+  margin-top: 20px;
+}
+
+.about_movie {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  gap: 30px;
+  background: red;
+}
+
+.about_movie_1,
+.about_movie_2 {
+  padding-top: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  background: green;
+}
+
+.comments_header_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.comments_texts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.comments_input_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.comments_input {
+  width: 50%;
+}
+
+.submit_comment_btn {
+  margin-top: 5px;
+  width: 50%;
+}
