@@ -1,5 +1,5 @@
 import './style.css';
-import { movieList } from '../modules/homepage.js';
+import { movieList } from './modules/displayPage.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   movieList();
