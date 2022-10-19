@@ -17,7 +17,7 @@ const movieList = async () => {
         <i class="fa fa-heart" aria-hidden="true"></i>
         <p>20 likes</p>
       </div>
-      <button>Comments</button>`;
+      <button id="commentsBtn">Comments</button>`;
 
     movieUL.appendChild(movieLI);
     moviesContainer.appendChild(movieUL);
