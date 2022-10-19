@@ -10,6 +10,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -18,7 +23,6 @@ li {
 }
 
 body {
-  /* background-color: #000; */
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -31,8 +35,8 @@ body {
   }
 }
 
-h1 {
-  color: #fff;
+.movie-title {
+  color: #000;
 }
 
 span {
@@ -55,9 +59,8 @@ li {
 /* stylings for the display items */
 .movies-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 20px 0;
-  padding-right: 20px;
   margin: auto;
   gap: 20px;
 }
@@ -67,8 +70,9 @@ h2 {
 }
 
 img {
-  width: 370px;
-  height: 500px;
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
 }
 
 .movie-cards {
