@@ -1,7 +1,7 @@
 import './style.css';
 import { movieList } from '../modules/homepage.js';
 import Popup from '../modules/popup.js';
-import { Involvement } from '../modules/PopupApi.js';
+import Involvement from '../modules/PopupApi.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   movieList();
