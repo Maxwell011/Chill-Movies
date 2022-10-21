@@ -57,8 +57,6 @@ body {
 
 /* stylings for the display items */
 .movies-container {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -66,6 +64,10 @@ body {
   gap: 10px;
   background: rgb(233, 233, 233);
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 20px;
 }
 
 img {
@@ -96,6 +98,12 @@ img {
   font-size: 12px;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.movielength {
+  color: black;
 }
 
 #rating {
@@ -166,7 +174,6 @@ span {
 }
 
 /* stylings for the display items */
-
 h2 {
   text-align: center;
 }

@@ -51,7 +51,7 @@ export default class Popup {
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div class='show-comment'>
           <h3 class = "class-heading all-comments"> All Comments (${this.countComments(
-      arr,
+          <h3 class = "class-heading"> All Comments (${this.countComments(arr,
     )})</h3>
           <ul class ="D-comments"></ul>         
         </div>
