@@ -6,11 +6,15 @@ const movieApi = async () => {
   return ShowResult.slice(0, 10);
 };
 
-movieApi();
+window.onload = movieApi();
+
+export const contCount = (arr) => arr.length;
 
 const movieList = async () => {
   const allMovies = await movieApi();
   const likesApi = await LikeApi();
+  const movieLength = document.querySelector('.movielength');
+  movieLength.innerText = `(${contCount(allMovies)})`;
   allMovies.forEach((movie) => {
     const cardLikes = likesApi.find((like) => like.item_id === movie.id);
     const { id } = movie;
