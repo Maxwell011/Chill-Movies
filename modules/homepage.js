@@ -25,11 +25,10 @@ const movieList = async () => {
       </div>
       <a href="${movie.officialSite}" class="movie-title">${movie.name}</a>
       <div class="movie-info">
-        <p>${movie.weight}mb</p>
-        <p>${movie.language}</p>
+        <p<i class="fa-solid fa-star" id='rating'></i>${movie.rating.average}</p>
+        </div>
         <i class="fa fa-heart" aria-hidden="true"></i>
         <p class = "totalLikes">${liveCount} likes</p>
-        </div>
         <button id = ${id} class = "commentBtn">Comments</button>`;
 
     movieUL.appendChild(movieLI);

@@ -1,11 +1,13 @@
 // eslint-disable-next-line import/prefer-default-export
-export default class involvement {
+export default class Involvement {
   static postApp = async () => {
     const response = await fetch(
-      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HW8Zns3g7hE8XehtHEw6/comments',
+      'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/',
       {
         method: 'POST',
-        'content-type': 'application/json; charset=utf-8',
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
       }
     );
     const data = await response.json();
@@ -13,7 +15,7 @@ export default class involvement {
   };
 
   static postComments = async (id, name, com) => {
-    const data = await fetch(
+    await fetch(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HW8Zns3g7hE8XehtHEw6/comments',
       {
         method: 'POST',
@@ -37,4 +39,4 @@ export default class involvement {
   };
 }
 
-export { involvement };
+export { Involvement };

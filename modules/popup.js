@@ -1,5 +1,3 @@
-const id = 'HW8Zns3g7hE8XehtHEw6';
-
 export default class Popup {
   static getInfos = async (id) => {
     const movieInfo = await fetch(`https://api.tvmaze.com/shows/${id}`).then(
@@ -13,7 +11,7 @@ export default class Popup {
   static display = async (movieInfo, id, comList) => {
     const mi = await movieInfo;
     const arr = await comList;
-    const popup = document.querySelector('.popup-container');
+    const popup = document.querySelector('.popup');
     popup.innerHTML = `  
       <div class="description">
         <div class="D-description">
@@ -21,7 +19,6 @@ export default class Popup {
       mi.image.medium
     }" class = "image" id = "movie-img" alt=""></a>
           <div class = "comments">
-          
             <div class = "form" >
               <label for="fname">Name:</label><br>
               <input type="text" id="fname" name="fname" placeholder = "Enter your name"><br><br>
@@ -50,7 +47,7 @@ export default class Popup {
         <li class = "remove"><b>Episodes Ordered</b> </li>
         <li><b>language:</b>: ${mi.language}</li>
         <li><b>Rating:</b>: ${mi.rating.average}</li>
-        <div>
+        <div class='show-comment'>
           <h3 class = "class-heading"> All Comments (${this.countComments(
             arr
           )})</h3>
@@ -64,7 +61,6 @@ export default class Popup {
     const commentList = document.querySelector('.D-comments');
     commentList.innerHTML = '';
     const arr = await MoveInfo;
-    console.log(arr);
     arr.forEach((item) => {
       commentList.innerHTML += `<li class = "listCom">${item.username}: ${
         item.comment
