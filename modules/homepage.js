@@ -3,7 +3,7 @@ import { LikeApi, NewLike } from './likes.js';
 const movieApi = async () => {
   const fetchResult = await fetch('https://api.tvmaze.com/shows');
   const ShowResult = await fetchResult.json();
-  return ShowResult.slice(0, 10);
+  return ShowResult.slice(0, 16);
 };
 
 window.onload = movieApi();
