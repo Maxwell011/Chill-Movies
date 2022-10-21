@@ -1,4 +1,4 @@
-import { LikeApi, NewLike } from '../modules/likes.js';
+import { LikeApi, NewLike } from './likes.js';
 
 const movieApi = async () => {
   const fetchResult = await fetch('https://api.tvmaze.com/shows');
@@ -12,8 +12,8 @@ const movieList = async () => {
   const allMovies = await movieApi();
   const likesApi = await LikeApi();
   allMovies.forEach((movie) => {
-    let cardLikes = likesApi.find((like) => like.item_id === movie.id);
-    const id = movie.id;
+    const cardLikes = likesApi.find((like) => like.item_id === movie.id);
+    const { id } = movie;
     let liveCount = +cardLikes?.likes;
 
     const moviesContainer = document.querySelector('.movies-container');
@@ -39,15 +39,14 @@ const movieList = async () => {
     likeButton.addEventListener(
       'click',
       async (btn) => {
-        const liveCountElement =
-          movieLI.getElementsByClassName('totalLikes')[0];
+        const liveCountElement = movieLI.getElementsByClassName('totalLikes')[0];
         liveCount += 1;
         liveCountElement.innerHTML = `${liveCount} likes`;
         NewLike(id);
         btn.disabled = true;
         likeButton.style.color = 'red';
       },
-      { once: true }
+      { once: true },
     );
   });
 };
