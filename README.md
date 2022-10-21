@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# CHILLMOVIES
+# PRANMOVIES
 
 > A movie website that displays movie from an Api and lets a user add reviews, likes and comment with a click.
 
@@ -15,7 +15,6 @@
 [Live Demo Link](https://)
 
 ## Video Presentation
-
 [Video link]()
 
 ## Getting Started
@@ -69,11 +68,12 @@ npm run deploy
 - GitHub: [@githubhandle](https://github.com/Maxwell011)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemeka-orji-50b766241/)
 
-👤 \*\*\*\*
 
-- GitHub: [@](https://)
-- Twitter: [@](https://)
-- LinkedIn: [](https://)
+👤 **Abdulai Samuel Moiwa**
+
+- [GitHub](https://github.com/samuelmoiwa)
+- [Twitter](https://twitter.com/samuelmoiwa)
+- [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
 
 ## 🤝 Contributing
 
