@@ -3,7 +3,7 @@ import { LikeApi, NewLike } from './likes.js';
 const movieApi = async () => {
   const fetchResult = await fetch('https://api.tvmaze.com/shows');
   const ShowResult = await fetchResult.json();
-  return ShowResult.slice(0, 10);
+  return ShowResult.slice(0, 16);
 };
 
 window.onload = movieApi();
@@ -42,14 +42,15 @@ const movieList = async () => {
     likeButton.addEventListener(
       'click',
       async (btn) => {
-        const liveCountElement = movieLI.getElementsByClassName('totalLikes')[0];
+        const liveCountElement =
+          movieLI.getElementsByClassName('totalLikes')[0];
         liveCount += 1;
         liveCountElement.innerHTML = `${liveCount} likes`;
         NewLike(id);
         btn.disabled = true;
         likeButton.style.color = 'red';
       },
-      { once: true },
+      { once: true }
     );
   });
 };
