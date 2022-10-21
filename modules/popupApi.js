@@ -37,5 +37,3 @@ export default class Involvement {
     return response;
   };
 }
-
-export { Involvement };
