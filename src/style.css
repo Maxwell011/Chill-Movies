@@ -122,10 +122,10 @@ button:active {
 }
 
 /* For mobile screens */
-@media screen and (max-width: 768px) {
-  .mobile {
+/* @media screen and (max-width: 768px) {
+  .mobile { */
     /* color: wheat; */
-    color: white;
+    /* color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,4 +146,110 @@ button:active {
     width: 300px;
     height: 400px;
   }
+}
+
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 2px solid pink;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  width: 500px;
+  max-width: 80%;
+}
+
+.popup-container.active {
+
+}
+
+.close-btn {
+  font-size: 3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+
+} */
+
+.description {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  gap: 30px;
+}
+
+.comments {
+  display: flex;
+  gap: 25px;
+}
+
+.mInfo {
+  flex: 1;
+  background-color: #F7F7F7;
+}
+
+.D-description {
+  display: flex;
+  gap: 20px;
+}
+
+#comment {
+  display: block;
+}
+
+.popup {
+  transition: 200ms ease-in-out;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 80%;
+  padding: 2%;
+  display: flex;
+  background-color: white;
+  z-index: 10;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.overlay {
+  transition: 200ms ease-in-out;
+  position: fixed;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.D-comments {
+  overflow:scroll;
+  max-height: 150px;
+}
+
+h3 {
+  margin-left: 33px;
 }
