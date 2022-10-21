@@ -61,7 +61,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: auto;
-  gap: 10px;
   background: rgb(233, 233, 233);
   padding: 20px;
   display: grid;
