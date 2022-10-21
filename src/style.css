@@ -56,7 +56,7 @@ body {
 .movies-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -252,12 +252,25 @@ button:active {
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  border-color: #22242f;
   /* align-items: center; */
 }
 
 .D-description {
   display: block;
   gap: 20px;
+}
+
+.all-comments {
+  text-align: center;
+}
+
+.official_site {
+  color: #000;
+  font-weight: 700;
 }
 
 #comment {
@@ -282,6 +295,7 @@ button:active {
   background-color: white;
   z-index: 10;
   color: #000;
+  border-radius: 5px;
 }
 
 .summary-tag h1 {
@@ -358,6 +372,23 @@ h3 {
   color: #fff;
 }
 
+.text_d {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.D-comments {
+  height: 250px;
+  gap: 10px;
+  overflow: scroll;
+}
+
+.tv_show {
+  color: brown;
+  text-align: center;
+}
+
 /* For mobile screens */
 @media screen and (max-width: 768px) {
   .mobile {
@@ -423,7 +454,6 @@ h3 {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #f7f7f7;
   }
 
   .description {
