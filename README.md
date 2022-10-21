@@ -69,11 +69,11 @@ npm run deploy
 - GitHub: [@githubhandle](https://github.com/Maxwell011)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/chukwuemeka-orji-50b766241/)
 
-👤 \*\*\*\*
+👤 **Abdulai Samuel Moiwa**
 
-- GitHub: [@](https://)
-- Twitter: [@](https://)
-- LinkedIn: [](https://)
+- [GitHub](https://github.com/samuelmoiwa)
+- [Twitter](https://twitter.com/samuelmoiwa)
+- [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
 
 ## 🤝 Contributing
 
