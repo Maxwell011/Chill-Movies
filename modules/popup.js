@@ -1,7 +1,7 @@
 export default class Popup {
   static getInfos = async (id) => {
     const movieInfo = await fetch(`https://api.tvmaze.com/shows/${id}`).then(
-      (result) => result.json()
+      (result) => result.json(),
     );
     return movieInfo;
   };
@@ -49,8 +49,8 @@ export default class Popup {
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div class='show-comment'>
           <h3 class = "class-heading"> All Comments (${this.countComments(
-            arr
-          )})</h3>
+      arr,
+    )})</h3>
           <ul class ="D-comments">
           </ul>
         </div>

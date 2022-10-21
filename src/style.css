@@ -23,7 +23,6 @@ a {
 }
 
 body {
-  /* background-color: #27293d; */
   color: #fff;
   margin: 0;
   padding: 0;
@@ -37,7 +36,11 @@ body {
 }
 
 .movie-title {
-  color: #fff;
+  text-align: center;
+  color: #464646;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .lists {
@@ -53,13 +56,8 @@ body {
 .movies-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* padding: 20px 0; */
   margin: auto;
   gap: 20px;
-}
-
-h2 {
-  text-align: center;
 }
 
 img {
@@ -82,30 +80,13 @@ img {
   box-shadow: 0 0 4px #747474ab;
 }
 
-.movie-cards {
-  background-color: #22242f;
-  /* padding: 10px; */
-  border-radius: 5px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-}
-
-.movie-title {
-  text-align: center;
-  color: #464646;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
 .movie-info {
   display: flex;
   font-size: 12px;
   justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 #rating {
@@ -156,14 +137,6 @@ span {
   color: #000;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .nav-items a {
   color: wheat;
   text-decoration: none;
@@ -172,38 +145,8 @@ a {
 }
 
 /* stylings for the display items */
-.movies-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* padding: 20px 0; */
-  /* padding-right: 20px; */
-
-  /* align-content: center; */
-  margin: auto;
-
-}
-
 h2 {
   text-align: center;
-}
-
-img {
-  width: 370px;
-  height: 500px;
-}
-
-.movie-title {
-  text-align: center;
-  color: #464646;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.movie-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 button {
@@ -249,7 +192,6 @@ button:active {
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
-  /* align-items: center; */
 }
 
 .D-description {
