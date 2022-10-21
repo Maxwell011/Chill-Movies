@@ -1,7 +1,8 @@
 import './style.css';
 import { movieList } from '../modules/homepage.js';
 import Popup from '../modules/popup.js';
-import Involvement from '../modules/PopupApi.js';
+// eslint-disable-next-line import/no-named-as-default
+import Involvement from '../modules/popupApi.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   movieList();

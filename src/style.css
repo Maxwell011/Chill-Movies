@@ -26,7 +26,6 @@ a {
 }
 
 body {
-  /* background-color: #27293d; */
   color: #fff;
   margin: 0;
   padding: 0;
@@ -40,7 +39,11 @@ body {
 }
 
 .movie-title {
+  text-align: center;
   color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .lists {
@@ -67,10 +70,6 @@ body {
   padding: 20px;
 }
 
-h2 {
-  text-align: center;
-}
-
 img {
   width: 300px;
   height: 350px;
@@ -92,14 +91,6 @@ img {
 .movie-cards:hover {
   box-shadow: 0 0 4px #747474ab;
   cursor: pointer;
-}
-
-.movie-title {
-  text-align: center;
-  color: #464646;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .movie-info {
@@ -129,7 +120,6 @@ footer {
 /* For mobile screens */
 @media screen and (max-width: 768px) {
   .mobile {
-    /* color: wheat; */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -170,14 +160,6 @@ span {
   color: #000;
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .nav-items a {
   color: wheat;
   text-decoration: none;
@@ -186,38 +168,9 @@ a {
 }
 
 /* stylings for the display items */
-.movies-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* padding: 20px 0; */
-  /* padding-right: 20px; */
-
-  /* align-content: center; */
-  margin: auto;
-
-}
 
 h2 {
   text-align: center;
-}
-
-img {
-  width: 370px;
-  height: 500px;
-}
-
-.movie-title {
-  text-align: center;
-  color: #464646;
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.movie-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
 }
 
 button {
@@ -267,7 +220,6 @@ button:active {
   border-width: 1px;
   padding: 10px;
   border-color: #22242f;
-  /* align-items: center; */
 }
 
 .D-description {

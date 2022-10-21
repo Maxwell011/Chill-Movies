@@ -1,7 +1,7 @@
 export default class Popup {
   static getInfos = async (id) => {
     const movieInfo = await fetch(`https://api.tvmaze.com/shows/${id}`).then(
-      (result) => result.json()
+      (result) => result.json(),
     );
     return movieInfo;
   };
@@ -16,7 +16,7 @@ export default class Popup {
       <div class="description">
         <div class="D-description">
           <a href="${mi.network.officialSite}"><img src="${
-          mi.image.medium }" class = "image" id = "movie-img" alt=""></a>
+      mi.image.medium}" class = "image" id = "movie-img" alt=""></a>
           <div class = "comments">
             <div class = "form" >
               <label for="fname">Name:</label><br>
@@ -39,7 +39,7 @@ export default class Popup {
         ${mi.network.name} <br>
         </a> (${mi.premiered} - ${mi.ended})</li>
         <li class = "remove"><b>Schedule</b>: ${mi.schedule.days[0]} at ${
-        mi.schedule.time} 
+      mi.schedule.time} 
         (${mi.runtime}min)</li>
         <li class = "remove"><b>Status</b>: ${mi.status}</li>
         <li class = "remove"><b>Show Type:</b> ${mi.type}</li>
@@ -49,8 +49,8 @@ export default class Popup {
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div class='show-comment'>
           <h3 class = "class-heading all-comments"> All Comments (${this.countComments(
-            arr
-          )})</h3>
+      arr,
+    )})</h3>
           <ul class ="D-comments">
           </ul>
           

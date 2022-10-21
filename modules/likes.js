@@ -2,13 +2,14 @@ const tvId = 'HW8Zns3g7hE8XehtHEw6';
 
 const LikeApi = async () => {
   const getLike = await fetch(
-    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${tvId}/likes`
+    `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${tvId}/likes`,
   ).then((res) => res.json());
   return getLike;
 };
 LikeApi();
 
 const NewLike = async (id) => {
+  // eslint-disable-next-line no-unused-vars
   const res = await fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${tvId}/likes`,
     {
@@ -19,7 +20,7 @@ const NewLike = async (id) => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }
+    },
   );
 };
 

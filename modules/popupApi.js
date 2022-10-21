@@ -8,7 +8,7 @@ export default class Involvement {
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
-      }
+      },
     );
     const data = await response.json();
     return data;
@@ -27,13 +27,13 @@ export default class Involvement {
         headers: {
           'Content-type': 'application/json; charset=UTF-8',
         },
-      }
+      },
     );
   };
 
   static getComments = async (id) => {
     const response = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HW8Zns3g7hE8XehtHEw6/comments?item_id=${id}`
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HW8Zns3g7hE8XehtHEw6/comments?item_id=${id}`,
     ).then((res) => res.json());
     return response;
   };
