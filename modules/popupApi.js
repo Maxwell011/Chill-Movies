@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
 export default class Involvement {
   static postApp = async () => {
     const response = await fetch(
@@ -38,5 +37,3 @@ export default class Involvement {
     return response;
   };
 }
-
-export { Involvement };
