@@ -62,8 +62,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 2000px;
   height: auto;
   gap: 10px;
   background: rgb(233, 233, 233);
