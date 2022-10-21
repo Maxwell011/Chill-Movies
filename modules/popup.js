@@ -34,13 +34,15 @@ export default class Popup {
         </div>
       </div>
       <ul class = "mInfo">
-        <h1 class = "remove"> TV SHOW INFO</h1>
-        <li class = "remove"><a href="${mi.network.officialSite}">${
-      mi.network.name
-    }</a> (${mi.premiered} - ${mi.ended})</li>
+        <h1 class = "remove tv_show"> TV SHOW INFO</h1>
+        <li class = "remove text_d">
+        <a class="official_site" href="${mi.network.officialSite}"> 
+        ${mi.network.name} <br>
+        </a> (${mi.premiered} - ${mi.ended})</li>
         <li class = "remove"><b>Schedule</b>: ${mi.schedule.days[0]} at ${
       mi.schedule.time
-    } (${mi.runtime}min)</li>
+    } 
+        (${mi.runtime}min)</li>
         <li class = "remove"><b>Status</b>: ${mi.status}</li>
         <li class = "remove"><b>Show Type:</b> ${mi.type}</li>
         <li><b>Genres</b>: ${mi.genres}</li>
@@ -48,6 +50,7 @@ export default class Popup {
         <li><b>language:</b>: ${mi.language}</li>
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div class='show-comment'>
+          <div>
           <h3 class = "class-heading"> All Comments (${this.countComments(
       arr,
     )})</h3>

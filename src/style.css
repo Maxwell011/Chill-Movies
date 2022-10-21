@@ -17,13 +17,16 @@ a {
 
 .nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  background: #22242f;
+  height: 100px;
 }
 
 body {
-  color: black;
+  color: #fff;
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -37,7 +40,7 @@ body {
 
 .movie-title {
   text-align: center;
-  color: #464646;
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
   font-size: 1.5rem;
@@ -49,11 +52,17 @@ body {
   font-size: 1.2rem;
   padding-right: 20px;
   gap: 30px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /* stylings for the display items */
 .movies-container {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  background: rgb(233, 233, 233);
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
@@ -73,11 +82,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #22242f;
+  width: fit-content;
   gap: 10px;
 }
 
 .movie-cards:hover {
   box-shadow: 0 0 4px #747474ab;
+  cursor: pointer;
 }
 
 .movie-info {
@@ -100,10 +112,19 @@ img {
   border-radius: 4px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #22242f;
+  width: 100%;
+  height: 100px;
+}
+
 /* For mobile screens */
 @media screen and (max-width: 768px) {
   .mobile {
-    /* color: wheat; */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -113,8 +134,11 @@ img {
   }
 
   .movies-container {
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1500px;
   }
 
   .nav-items {
@@ -196,11 +220,24 @@ button:active {
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+  border-color: #22242f;
 }
 
 .D-description {
   display: block;
   gap: 20px;
+}
+
+.all-comments {
+  text-align: center;
+}
+
+.official_site {
+  color: #000;
+  font-weight: 700;
 }
 
 #comment {
@@ -225,6 +262,7 @@ button:active {
   background-color: white;
   z-index: 10;
   color: #000;
+  border-radius: 5px;
 }
 
 .summary-tag h1 {
@@ -301,6 +339,23 @@ h3 {
   color: #fff;
 }
 
+.text_d {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.D-comments {
+  height: 250px;
+  gap: 10px;
+  overflow: scroll;
+}
+
+.tv_show {
+  color: brown;
+  text-align: center;
+}
+
 /* For mobile screens */
 @media screen and (max-width: 768px) {
   .mobile {
@@ -366,7 +421,6 @@ h3 {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #f7f7f7;
   }
 
   .description {
