@@ -42,7 +42,7 @@
     "stylelint-scss": "^3.21.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.1"
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "gh-pages": "^4.0.0",
@@ -54,5 +54,6 @@
       "./setupJest.js"
     ],
     "testEnvironment": "jsdom"
-  }
+  },
+  "main": "babel.config.js"
 }
