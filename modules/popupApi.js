@@ -34,6 +34,9 @@ export default class Involvement {
     const response = await fetch(
       `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/HW8Zns3g7hE8XehtHEw6/comments?item_id=${id}`,
     ).then((res) => res.json());
+    if (response.error) {
+      return [];
+    }
     return response;
   };
 }
