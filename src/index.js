@@ -41,4 +41,5 @@ document.addEventListener('click', async (e) => {
   await Involvement.postComments(id, name, com);
   const comList = await Involvement.getComments(id);
   Popup.displayCom(comList);
+  Popup.countComments(comList);
 });

@@ -6,7 +6,13 @@ export default class Popup {
     return movieInfo;
   };
 
-  static countComments = (len) => len.length;
+  static countComments = (len) => {
+    const commentLength = len?.length;
+    const element = document.getElementById('comments-length');
+    if (element) {
+      element.innerHTML = `All comments ${commentLength}`;
+    }
+  };
 
   static display = async (movieInfo, id, comList) => {
     const mi = await movieInfo;
@@ -15,9 +21,7 @@ export default class Popup {
     popup.innerHTML = `  
       <div class="description">
         <div class="D-description">
-          <a href="${mi.network.officialSite}"><img src="${
-      mi.image.medium
-    }" class = "image" id = "movie-img" alt=""></a>
+          <img src="${movieInfo.image.medium}" class = "image" id = "movie-img" alt="">
           <div class = "comments">
             <div class = "form" >
               <label for="fname">Name:</label><br>
@@ -39,9 +43,7 @@ export default class Popup {
         <a class="official_site" href="${mi.network.officialSite}"> 
         ${mi.network.name} <br>
         </a> (${mi.premiered} - ${mi.ended})</li>
-        <li class = "remove"><b>Schedule</b>: ${mi.schedule.days[0]} at ${
-      mi.schedule.time
-    } 
+        <li class = "remove"><b>Schedule</b>: ${mi.schedule.days[0]} at ${mi.schedule.time} 
         (${mi.runtime}min)</li>
         <li class = "remove"><b>Status</b>: ${mi.status}</li>
         <li class = "remove"><b>Show Type:</b> ${mi.type}</li>
@@ -51,9 +53,7 @@ export default class Popup {
         <li><b>Rating:</b>: ${mi.rating.average}</li>
         <div class='show-comment'>
           <div>
-          <h3 class = "class-heading"> All Comments (${this.countComments(
-      arr,
-    )})</h3>
+          <h3 class = "class-heading" id="comments-length"> All Comments (${arr.length || 0})</h3>
           <ul class ="D-comments">
           </ul>
         </div>
@@ -64,7 +64,7 @@ export default class Popup {
     const commentList = document.querySelector('.D-comments');
     commentList.innerHTML = '';
     const arr = await MoveInfo;
-    arr.forEach((item) => {
+    arr?.forEach((item) => {
       commentList.innerHTML += `<li class = "listCom">${item.username}: ${
         item.comment
       } <br> :${item.creation_date.slice(-5, -1)}</li>`;
