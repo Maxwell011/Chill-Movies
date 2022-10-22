@@ -11,6 +11,7 @@ export default class Popup {
   static display = async (movieInfo, id, comList) => {
     const mi = await movieInfo;
     const arr = await comList;
+
     const popup = document.querySelector('.popup');
     popup.innerHTML = `  
       <div class="description">
