@@ -13,7 +13,9 @@ document.addEventListener('click', async (e) => {
     return;
   }
   const { id } = e.target;
+
   const comList = await Involvement.getComments(id);
+
   const MoveInfo = await Popup.getInfos(id);
   await Popup.display(MoveInfo, id, comList);
   const overlay = document.querySelector('.overlay');
